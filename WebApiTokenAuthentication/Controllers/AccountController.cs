@@ -6,11 +6,12 @@ using System.Net.Http;
 using System.Security.Claims;
 using System.Web.Http;
 using System.Web.Security;
+using WebApiTokenAuthentication.Models;
 using static WebApiTokenAuthentication.UserData;
 
 namespace WebApiTokenAuthentication.Controllers
 {
-    [Authorize]
+    [MyAuthorize]
     public class AccountController : ApiController
     {
         public IHttpActionResult Get()
